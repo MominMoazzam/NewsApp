@@ -1,0 +1,13 @@
+<div class="container">
+    <h4>Business News</h4>
+    <div class="row">
+        <div *ngFor="let b of businessNewsArray" class="col-lg-3 mt-3 mb-3 ">
+
+            <div class="box">
+             <img src="{{b.urlToImage}}" alt="" width="100%">
+             <p class="title mt-3 mb-2">{{b.title}}</p>
+             <a target="_blank" class="btn btn-dark mt-2" href="{{b.url}}">ReadMore</a>
+            </div>
+        </div>
+    </div>
+</div>
